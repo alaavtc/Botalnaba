@@ -1,2 +1,1 @@
-# Botalnaba
-بوت النبع للتداول الذكي
+python-telegram-bot==20.3
