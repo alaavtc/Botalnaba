@@ -8,8 +8,8 @@
 - سهل الإعداد والاستخدام.
 
 ## المتطلبات
-- Python 3.8+
-- مكتبات: `python-telegram-bot`، `requests`، وغيرها (حسب كود البوت).
+python-telegram-bot
+requests
 
 ## كيفية التشغيل
 
