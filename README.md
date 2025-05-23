@@ -1,14 +1,22 @@
-import os
-from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+# بوت النبع - Botalnaba
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+بوت تيليجرام ذكي للتداول وإرسال التنبيهات اللحظية.
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("أهلاً! هذا بوت النبع للتداول الذكي.")
+## الميزات
+- يرسل تنبيهات لحظية عن العملات الرقمية.
+- متصل بمنصات مثل بينانس (Binance).
+- سهل الإعداد والاستخدام.
 
-if __name__ == "__main__":
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
-    app.add_handler(CommandHandler("start", start))
-    print("البوت شغال...")
-    app.run_polling()
+## المتطلبات
+- Python 3.8+
+- مكتبات: `python-telegram-bot`، `requests`، وغيرها (حسب كود البوت).
+
+## كيفية التشغيل
+
+1. نسخ التوكن من بوت تيليجرام (BotFather).
+2. إضافة التوكن كـ Secret في GitHub باسم `BOT_TOKEN`.
+3. تحميل الكود وتشغيله:
+
+```bash
+pip install -r requirements.txt
+python main.py
